@@ -1,0 +1,303 @@
+
+@font-face {
+    font-family: LegendsFont;
+    src: url(./assets/fonts/friz-quadrata-std-medium-5870338ec7ef8.otf);
+}
+@font-face {
+    font-family: LegendsFont2;
+    src: url(./assets/fonts/friz-quadrata-std-bold-587034a220f9f.otf);
+}
+@font-face {
+    font-family: RelatedFont;
+    src: url(./assets/fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+*{
+    font-family: LegendsFont;
+}
+body { 
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(24, 21, 17);
+}
+.Page {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    width: 100vw;
+    background-color:rgb(9, 10, 9) ;
+    background-blend-mode: soft-light;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0.5 0 auto;
+    border-bottom: 3px solid rgb(22, 12, 26);
+}
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 auto;
+    justify-content: space-between;
+}
+.logoContainer > h1{
+    align-self: center;
+    margin: 10px 25px -5px 3vw;
+    font-size: 54px;
+    text-shadow: 0px 0px 295px rgba(0, 199, 17, 0.438);
+}
+img.logo {
+    width: 45px;
+    height: 55px;
+}
+.links-container {
+    margin: 25px;
+    margin: 5px 25px;
+    padding-bottom:2.5px;
+}
+.links-container > a {
+    text-decoration: none;
+    font-family: RelatedFont;
+    font-size: 28px;
+    color: rgba(121, 167, 79, 0.808);
+    margin: 0px 5px;
+}
+.sectionA {
+    width: 100vw;
+    height: auto;
+    background-image: url(./assets/img/ZaunLandscape3.jpg);
+    background-position: center;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.cointZaunLg {
+    width: 400px;
+    height: 470px;
+    flex: 0 0 auto;
+}
+.ZaunLg {
+    width: 350px;
+    height: 450px;
+}
+.sectionAinner {
+    display: flex;
+    width: 100vw;
+    height: auto;
+    margin: 30px 0px;
+    padding: 20px 0px;
+    background-color: rgba(13, 11, 14, 0.582);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    width: 60vw;
+    height: auto;
+    flex: 1 0 auto;
+    max-width: 60vw;
+}
+@media all and (max-width:688px) {
+    .sectionAinner {
+        flex-wrap: wrap;
+        margin: 0px;
+    }
+    .text {
+        max-width: 95vw;
+    }
+    .cointZaunLg {
+        width: 70vw;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        order: -1;
+        margin-left: 10vw;
+    }
+    .box{
+        flex-direction: column;
+    }
+} @media all and (max-width:930px) {
+    .sectionAinner {
+        padding-left: 2.2vw;
+        flex-wrap: wrap;
+    }
+    .text {
+        max-width: 90vw;
+        flex-direction: row;
+        width: 90vw;
+        text-align: center;
+    }    
+    .cointZaunLg {
+        width: 70vw;
+        align-self: center;
+        justify-self: center;
+        text-align: center;
+        order: -1;
+        margin-left: 10vw;
+    }
+}
+
+.text > h1 {
+    font-size: 55px;
+    margin: 5px 0px 5px 25px;
+    color: rgb(255, 255, 255);
+    flex: 0 0 auto;
+}
+.text > h3 {
+    margin: 0px 35px;
+    color: rgb(255, 255, 255);
+    flex: 0 0 auto;
+}
+.text > p {
+    margin: 10px 10px;
+    color: rgb(125, 150, 77);
+}
+.text > button {
+    width: 150px;
+    height: auto;
+    padding: 6px;
+    margin: 10px 25px;
+    font-size: 12px;
+    font-family: LegendsFont;
+    background-color: rgba(44, 29, 44, 0.822);
+    border: 2px solid rgba(114, 5, 81, 0.712);
+    border-radius: 20px;
+    color: rgb(167, 54, 167);
+}
+.text > button:hover {
+    border-radius: 25px;
+    font-family: LegendsFont;
+    background-color: rgb(116, 0, 79);
+    color: rgb(201, 38, 201);
+    text-shadow: 0px 0px 15px rgb(247, 0, 255);
+}
+.sectionB {
+    width: 100vw;
+    height: auto;
+    padding: 30px 0px 75px 0px;
+    background-color: rgba(27, 29, 26, 0.514);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    color: white;
+}
+.sectionB h2 {
+    font-size: 40px;
+    padding-bottom: -5px;
+    border-bottom: 1px double white;
+}
+.info-imgs {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    gap: 30px;
+}
+.img {
+    flex-wrap: wrap;
+    width: 220px;
+    text-align: center;
+    font-size: 12px;
+}
+.img p {
+    margin: 0px;
+    margin-top: 10px;
+}
+.img img {
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}
+.sectionC {
+    width: auto;
+    height: auto;
+    padding: 75px 15vw;
+    background-color: rgb(66, 90, 56);
+}
+.cage {
+    border: 2px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: rgba(21, 56, 20, 0.829);
+}
+.cage p:nth-child(1) {
+    margin: 0px;
+    font-size: 22px;
+    font-style: italic;
+    color: rgb(223, 223, 223);
+}
+
+.cage p:nth-child(2) {
+    flex: 1 0 auto;
+    margin: 0px;
+    margin-top: 5px;
+    margin-right: 30px;
+    text-align: right;
+    font-size: 18px;
+    font-style: italic;
+    color: rgb(197, 125, 161);
+}
+.sectionD {
+    width: auto;
+    height: auto;
+    padding: 100px 20vw;
+    background-color: rgba(27, 29, 26, 0.514) ;
+}
+.box {
+    background-color: rgb(196, 196, 196);
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 15px;
+    padding: 45px 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.one {
+    margin: 0px;
+    padding-right: -10px;
+    color: rgb(34, 58, 11);
+}
+.one h3 {
+    color: rgb(34, 65, 6);
+    font-size: 40px;
+    margin: 0px;
+    margin-left: 15px;
+}
+.one p {
+    font-size: 20px;
+    margin: 0px;
+}
+.two {
+    width: 154px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex: 0 0 auto ;
+}
+.two button {
+    margin: 0px 15px;
+    width: auto;
+    height: 30px;
+    padding: 10px;
+    flex: 0 0 auto ;
+    align-self: center;
+    border: 1px solid rgb(143, 117, 53);
+    border-radius: 5px;
+    background-color: rgb(129, 96, 11);
+    color: rgb(196, 196, 196);
+}
+footer {
+    padding: 10px 0px;
+    color: white;
+    text-align: center;
+}
